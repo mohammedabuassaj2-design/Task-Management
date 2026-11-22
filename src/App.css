@@ -1,0 +1,188 @@
+*{
+  font-family: Alexandria !important;
+}
+
+.App {
+  text-align: center;
+}
+.iconbutton{
+  transition: all 0.2s !important;
+}
+.iconbutton:hover{
+  background-color: rgb(225, 225, 225) !important;
+  box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.842);
+}
+
+.TodoCard{
+  transition: all 0.3s !important;
+}
+.TodoCard:hover{
+  padding-bottom: 7px;
+  padding-top: 7px;
+  box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.842);
+}
+
+
+/*=== CUSTM FONTS ===*/
+@font-face{
+  font-family: Alexandria;
+  src: url("/public/Fonts/Alexandria-Thin.ttf");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: Alexandria;
+  src: url("/public/Fonts/Alexandria-ExtraLight.ttf");
+  font-weight: 200;
+}
+ 
+
+@font-face {
+  font-family: Alexandria;
+  src: url("/public/Fonts/Alexandria-Light.ttf");
+  font-weight: 300;
+}
+
+
+@font-face {
+  font-family: Alexandria;
+  src: url("/public/Fonts/Alexandria-Regular.ttf");
+  font-weight: 400;
+}
+
+
+@font-face {
+  font-family: Alexandria;
+  src: url("/public/Fonts/Alexandria-Medium.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: Alexandria;
+  src: url("/public/Fonts/Alexandria-SemiBold.ttf");
+  font-weight: 600;
+}
+
+
+@font-face {
+  font-family: Alexandria;
+  src: url("/public/Fonts/Alexandria-Bold.ttf");
+  font-weight: 700;
+}
+
+
+@font-face {
+  font-family: Alexandria;
+  src: url("/public/Fonts/Alexandria-ExtraBold.ttf");
+  font-weight: 800;
+}
+
+
+@font-face {
+  font-family: Alexandria;
+  src: url("/public/Fonts/Alexandria-Black.ttf");
+  font-weight: 900;
+}
+
+/*=== // CUSTM FONTS // ===*/
+
+/*Dialog*/
+.overlay{
+  position:fixed;
+  top:0%;
+  left:0%;
+
+  width:100%;
+  height: 100%;
+  background:rgb(0, 0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.dialog{
+  width: 350px;
+  background:white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 0px 20px rgb(0, 0,0,0.3);
+}
+
+.button{
+ display: flex;
+ justify-content: space-around;
+ gap: 10px;
+ margin-top: 20px;
+ width: 40%;
+ margin-right: 60%;
+}
+
+.button button{
+  cursor: pointer;
+  width: 50%;
+}
+
+.Delete{
+  color: rgb(239, 239, 239);
+  background-color: rgb(252, 17, 17);
+}
+
+.dialog h2{
+  color:red;
+}
+
+.dialogUpdate{
+    width: 450px;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 20px rgb(0, 0, 0, 0.3);
+}
+
+.Updatebuttons{
+  display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    margin-top: 20px;
+    width: 40%;
+    margin-right: 60%;
+    height: 35px;
+}
+
+.Updatebuttons button {
+  cursor: pointer;
+  width: 50%;
+}
+
+
+/*SnackBar*/
+.SnackBar{
+  position: fixed;
+  bottom: 25px;
+  left:50%;
+  transform: translateX(-50%);
+  min-width: 280px;
+
+  max-width: 450px;
+  padding: 14px 24px;
+  border-radius: 10px;
+  color:white;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
+  box-shadow: 0px 8px 25px rgba(0,0,0,.25);
+  z-index: 9999;
+  animation: snackIn .3s ease;
+}
+
+@keyframes snackIn {
+  from{
+    opacity: 0;
+    transform: translate(-50%,0);
+  }
+  to{
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
